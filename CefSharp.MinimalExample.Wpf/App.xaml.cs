@@ -20,6 +20,9 @@ namespace CefSharp.MinimalExample.Wpf
             //Enables WebRTC
             settings.CefCommandLineArgs.Add("enable-media-stream");
 
+            settings.BackgroundColor = Cef.ColorSetARGB(0xff, 0xff, 0, 0);
+            //settings.BackgroundColor = Cef.ColorSetARGB(0, 0xff, 0, 0);
+
             //Perform dependency check to make sure all relevant resources are in our output directory.
             Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
 #endif
